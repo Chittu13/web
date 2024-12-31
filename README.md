@@ -11,3 +11,4 @@
 - __```dig axfr @<nameServer> <domain name>```__
 - __```fierce -dns <domain name>```__
 
+### [Nmap](nmap.md)
