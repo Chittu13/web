@@ -31,5 +31,7 @@
   - If you get the result `SAMBA-RECON  <20>`
   - That means there is a server running
   - so using `smbclient` we can connect to the server
+ 
+## [Msfconsole](msfconsole.md)
 
 
