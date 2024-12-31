@@ -1,0 +1,3 @@
+- __```service postgresql start && msfconsole```__
+- __```search <name>```__
+- __```sessions -i <UID>```__
