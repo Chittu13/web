@@ -35,5 +35,5 @@
 ## [Msfconsole](msfconsole.md)
 
 ## [SQL Injection](sql.md)
-
+## [HTTP Method Tampering ](http_tampering.mg)
 
