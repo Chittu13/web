@@ -1,7 +1,6 @@
 # TOOLS
 ## 1. Enumeration
 - __```netdiscover -I eth0 -r <ip>/24```___
-- __```sublist3r -d <domain name>``` or ```sublist3r -d <domain name> -e google,yahoo```  Subdomain Enumeration__
 - __```dnsenum <domain name>```__
 - __```dnsrecon -d <domain_name>```__
 - __```whatweb <ip>```__
@@ -11,6 +10,8 @@
 - __```dnsenum <domain name>```__
 - __```dig axfr @<nameServer> <domain name>```__
 - __```fierce -dns <domain name>```__
+- __```sublist3r -d <domain name>``` or ```sublist3r -d <domain name> -e google,yahoo```  Subdomain Enumeration__
+- __```dirb <url>```__
 
 ## 2. [Nmap](nmap.md)
 
@@ -36,4 +37,5 @@
 
 ## [SQL Injection](sql.md)
 ## [HTTP Method Tampering ](http_tampering.md)
+  - __```curl http://<target_ip>/uploads --upload-file shell.php```__
 
