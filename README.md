@@ -26,4 +26,10 @@
 - 
 
 ## 3. [SMB](smb.md)
+### nmblookup
+- `nmblookup -A 10.0.1.22`
+  - If you get the result `SAMBA-RECON  <20>`
+  - That means there is a server running
+  - so using `smbclient` we can connect to the server
+
 
