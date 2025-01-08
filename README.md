@@ -54,4 +54,10 @@
 - __<url>?input=test;system('whomai')__
 - __<url>?input=test;system('cat /etc/passwd')__
 
+## Nmap Scan for the eWPTv2
+- __```sudo nmap -sS -sV --script mysql-empty-password -p 3306 120.0.0.1```__
+
+
+
+
 
