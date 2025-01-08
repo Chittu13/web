@@ -19,6 +19,14 @@
 - __```gobuster dir -k -u http://127.0.0.1/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x txt,cnf,conf```__
 - __```gobuster dir -w /usr/share/wordlists/dirb/common.txt -x .html,.php -u http://127.0.0.1/```__
 
+## dirb
+- __```dirb <url> /usr/share/wordlists/dirb/small.txt```__
+
+
+## Nikto
+- __```nikto -h <url>```__
+
+
 ## Hydra 
 - __```hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt  127.0.0.1 ftp```__
 - __```hydra -l admin -P /root/Desktop/wordlists/100-common-passwords.txt 127.0.0.1 http-get /digest/```__
