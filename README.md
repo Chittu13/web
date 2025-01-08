@@ -65,6 +65,8 @@
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
+- [x] [Cross-Site Scripting (XSS)](xss.md)
+- [ ] []()
 
 
 
