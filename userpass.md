@@ -7,4 +7,5 @@ admin
 ```
 cookie1
 adminpasswd
+christmas
 ```
