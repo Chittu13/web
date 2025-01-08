@@ -1,0 +1,4 @@
+- **`https://test.com/?redirect=https://www.google.com`**
+- **`https://test.com/?redirect=https://www.google.com@evil.com`**
+- **`&redirect_url=google.com`**
+- **`/redirect?url=https://google.com`**
