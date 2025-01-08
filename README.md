@@ -23,8 +23,8 @@
 - __```hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt  127.0.0.1 ftp```__
 
 ## Mysql
-- ___```mysql -h 10.0.1.22 -u root```__
-- 
+- __```mysql -h 10.0.1.22 -u root```__
+
 
 ## 3. [SMB](smb.md)
 ### nmblookup
