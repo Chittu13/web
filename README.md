@@ -63,6 +63,7 @@
 - __```sudo nmap -sS -sV --script mysql-empty-password -p 3306 120.0.0.1```__
 
 
-
+# Check list
+## [Open redirect](open_redirect.md)
 
 
