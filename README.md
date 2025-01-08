@@ -64,6 +64,7 @@
 
 
 # Check list
-## [Open redirect](open_redirect.md)
+- [ ] [Open redirect](open_redirect.md)
+
 
 
