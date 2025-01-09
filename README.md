@@ -75,6 +75,8 @@ echo "<pre>$output</pre>";
 
 - __You can use perdefine webshells__
   - __```ls -al /usr/share/webshells/php```__
+ 
+- __If file upload restricts PHP file types, rename shell.php to an image extension like shell.jpg. Simply visiting `<url>/shell.jpg` won’t execute the PHP script. To run the script, append `/shell.php` to the URL: `<url>/shell.jpg/shell.php.`__
 
 
 # Check list
