@@ -18,6 +18,7 @@
 ## Gobuster
 - __```gobuster dir -k -u http://127.0.0.1/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x txt,cnf,conf```__
 - __```gobuster dir -w /usr/share/wordlists/dirb/common.txt -x .html,.php -u http://127.0.0.1/```__
+- __```gobuster dir --url <url> --wordlist /usr/share/wordlists/dirb/common.txt```__
 
 ## dirb
 - __```dirb <url> /usr/share/wordlists/dirb/small.txt```__
