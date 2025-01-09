@@ -89,6 +89,7 @@ echo "<pre>$output</pre>";
 
 ## WordPress
 - __```wpscan --url <url>```__
+- __`<url>/wp-content/uploads`__
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
