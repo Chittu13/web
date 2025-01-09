@@ -73,6 +73,9 @@ echo "<pre>$output</pre>";
 - > __save it as shell.php and upload this file in webserver__
 - > __<url>/shell.php?cmd=id__
 
+- __You can use perdefine webshells__
+  - __```ls -al /usr/share/webshells/php```__
+
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
