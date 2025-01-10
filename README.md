@@ -113,8 +113,7 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `/wp-login` or `/wp-login.php` and `/wp-admin` for the version__
 - [x] __Check for the `/wp-json` or `/wp-json/wp/v2/user` if is not working `xmlrpc.php`__
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
-
-- __```wpscan --url <url>```__
+- [x] __wpscan --url <url>__
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
