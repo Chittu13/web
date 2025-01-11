@@ -115,6 +115,9 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
 - [x] __wpscan --url <url>__
 
+
+- __Checking if the root user exists: If you receive a 200 OK root is there or try to change the number__
+  - __`curl -s -I -X GET https://vishwa747.wordpress.com/?author=1`__
 - [ ] __1. Plugin Enumeration__
   - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/plugins/' | sed -E 's, href=| src=, THIIIIS, g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
 - [ ] __2. Theme Enumeration__
