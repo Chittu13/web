@@ -121,7 +121,7 @@ echo "<pre>$output</pre>";
   - __`curl -s -I -X GET https://vishwa747.wordpress.com/?author=1`__
 
 - [ ] __1. WP VERSION__
-  - __`curl -s -X GET https://ma91jfbmc9tc0dbhwgtp9kgsh.us-east-40.attackdefensecloudlabs.com/ | grep http | grep -E '?ver=' | sed -E 's,href=src=, THIIIIS, g' | awk -F "THIIIIS" '{print $2}' | cut -d "'" -f2`__
+  - __`curl -s -X GET https://wordpress.com/ | grep http | grep -E '\?ver=' | sed -E 's,href=src=, THIIIIS, g' | awk -F "THIIIIS" '{print $2}' | cut -d "'" -f2`__
 - [ ] __2. Plugin Enumeration__
   - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/plugins/' | sed -E 's, href=| src=, THIIIIS, g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
 - [ ] __3. Theme Enumeration__
