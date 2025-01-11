@@ -111,16 +111,20 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `/readme.html` or `txt` and `/license.txt`__
 - [x] __Check for the `X-Powered-By` in Burpsuite__
 - [x] __Check for the `/wp-login` or `/wp-login.php` and `/wp-admin` for the version__
-- [x] __Check for the `/wp-json` or `/wp-json/wp/v2/user` if is not working `xmlrpc.php`__
+- [x] __Check for the `/wp-json` or `/wp-json/wp/v2/users` if is not working `xmlrpc.php`__
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
 - [x] __wpscan --url <url>__
 
+  - __`curl -s -I -X GET https://vishwa747.wordpress.com/wp-json/wp/v2/users`__
 
 - __Checking if the root user exists: If you receive a 200 OK root is there or try to change the number__
   - __`curl -s -I -X GET https://vishwa747.wordpress.com/?author=1`__
-- [ ] __1. Plugin Enumeration__
+
+- [ ] __1. WP VERSION__
+  - __`curl -s -X GET https://ma91jfbmc9tc0dbhwgtp9kgsh.us-east-40.attackdefensecloudlabs.com/ | grep http | grep -E '?ver=' | sed -E 's,href=src=, THIIIIS, g' | awk -F "THIIIIS" '{print $2}' | cut -d "'" -f2__`
+- [ ] __2. Plugin Enumeration__
   - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/plugins/' | sed -E 's, href=| src=, THIIIIS, g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
-- [ ] __2. Theme Enumeration__
+- [ ] __3. Theme Enumeration__
   - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/themes' | sed -E 's, href=|src=, THIIIIS,g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
      
   - 
