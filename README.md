@@ -113,8 +113,11 @@ echo "<pre>$output</pre>";
 - [x] __Check for the `/wp-login` or `/wp-login.php` and `/wp-admin` for the version__
 - [x] __Check for the `/wp-json` or `/wp-json/wp/v2/users` if is not working `xmlrpc.php`__
 - [x] __Check for the `changelog.txt` or `CHANGELOG.txt`__
+
+## [2] wpscan
 - [x] __wpscan --url <url>__
 - [x] __wpcan --url https://wordpress.com/ --enumerate u__
+- [x] __wpcan --url https://wordpress.com/ --enumerate -U <user_if_you_konw> -P /usr/share/wordlist/rockyou.txt__
 - [x] __wpcan --url https://wordpress.com/ --enumerate p --api-token "<token>"__
 
   - __`curl -s -I -X GET https://wordpress.com/wp-json/wp/v2/users`__
