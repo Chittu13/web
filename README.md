@@ -22,6 +22,7 @@
 
 ## dirb
 - __```dirb <url> /usr/share/wordlists/dirb/small.txt```__
+- __`dirb <url> -w /usr/share/dirb/wordlists/big.txt -X .bak,.tar.gaz,.zip,.sql,.bak.zip`__
 
 
 ## Nikto
