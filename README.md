@@ -83,15 +83,6 @@
 ```
 " or 1 = 1-- -
 ```
-## 3. [SMB](smb.md)
-### nmblookup
-- `nmblookup -A 10.0.1.22`
-  - If you get the result `SAMBA-RECON  <20>`
-  - That means there is a server running
-  - so using `smbclient` we can connect to the server
-- __`smbclient -L //test.com -U administrator`__
-- __`crackmapexec smb target2.ine.local -u administrator -p pineapple --shares`__
-- __`smbclient //target2.ine.local/C$ -U administrator`__
  
 ## [Msfconsole](msfconsole.md)
 
