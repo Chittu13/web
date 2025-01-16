@@ -217,7 +217,7 @@ __Start netcat__
 
 Apache Tomcat 8080
   - __`search type:exploit tomcat`__
-  - [tomcat](/Q&A/tomcat.md)
+  - [tomcat](tomcat.md)
 
 80 XODA running 
   - __`search xoda`__
