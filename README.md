@@ -13,6 +13,11 @@
 - __```sublist3r -d <domain name>``` or ```sublist3r -d <domain name> -e google,yahoo```  Subdomain Enumeration__
 - __```dirb <url>```__
 
+ ### Cewl crawls a specified website and extracts text to create a wordlist based on the content of that site.
+- __`cewl -w passwords.txt http://test.com`__
+- __`cewl -d 3 -m 5 -w custom_wordlist.txt -v -a https://targetwebsite.com`__
+
+
 ## 2. [Nmap](nmap.md)
 
 ## Gobuster
