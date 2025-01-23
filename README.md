@@ -33,6 +33,13 @@
 - __`dirb <url> -w /usr/share/dirb/wordlists/big.txt -X .bak,.tar.gaz,.zip,.sql,.bak.zip`__
 - __`dirb http://target1.ine.local -u admin:password123`__
 
+## ffuf
+- __`ffuf -u <url>/FUZZ -k -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt`__
+- __`ffuf -u <url>/FUZZ -k -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -r -fs 27200`__
+- __`ffuf -u http://test.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H ‘Host: FUZZ.test.com’ -fs 0 -fs 65`__
+- __`ffuf -u https://targetsite.com/api/v1/resource?param=FUZZ -w wordlist.txt -mc 200 -t 50`__
+- __`ffuf -u https://example.com/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -mc 200,403 -fs 0 -e .php,.html,.log,.json -o found.json`__
+
 
 ## Nikto
 - __```nikto -h <url>```__
