@@ -53,6 +53,26 @@
 
 
 
+# Types of database
+
+- __1. Oracle__
+- __2. Microsft__
+- __3. PostgreSQL__
+- __4. MySQL__
+
+
+### Database comments
+- __1. Oracle      | --comment__
+- __2. Microsft    | --comment or /*comment*/__
+- __3. PostgreSQL  | --comment or /*comment*/__
+- __4. MySQL       | #comment or -- comment or /*comment*/__
+
+
+### Database version
+- __1. Oracle      | SELECT banner FROM v$version or SELECT version FROM v$instance__
+- __2. Microsft    | SELECT @@version__
+- __3. PostgreSQL  | SELECT version()__
+- __4. MySQL       | SELECT @@version__
 
 
 
