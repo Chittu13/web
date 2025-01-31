@@ -62,17 +62,17 @@
 
 
 ### Database comments
-- __1. Oracle      | --comment__
-- __2. Microsft    | --comment or /*comment*/__
-- __3. PostgreSQL  | --comment or /*comment*/__
-- __4. MySQL       | #comment or -- comment or /*comment*/__
+- __1. Oracle      | `--comment`__
+- __2. Microsft    | `--comment or /*comment*/`__
+- __3. PostgreSQL  | `--comment or /*comment*/`__
+- __4. MySQL       | `#comment or -- comment or /*comment*/`__
 
 
 ### Database version
-- __1. Oracle      | SELECT banner FROM v$version or SELECT version FROM v$instance__
-- __2. Microsft    | SELECT @@version__
-- __3. PostgreSQL  | SELECT version()__
-- __4. MySQL       | SELECT @@version__
+- __1. Oracle      | `SELECT banner FROM v$version or SELECT version FROM v$instance`__
+- __2. Microsft    | `SELECT @@version`__
+- __3. PostgreSQL  | `SELECT version()`__
+- __4. MySQL       | `SELECT @@version`__
 
 
 
