@@ -49,7 +49,7 @@
 
 
 
-## non-Oracle databases
+## 5. non-Oracle databases
 
 - __'+UNION+SELECT+NULL,NULL--__
 
@@ -70,7 +70,7 @@
 
 
 
-## Oracle databases
+## 6. Oracle databases
 
 - __`'+UNION+SELECT+NULL,NULL--`__
 
@@ -90,7 +90,7 @@
   - __`'+UNION+SELECT+username_ygmrlj,+password_jiuphc+FROM+USERS_RDINGX--`__
 
 
-# Types of database
+#  Types of database
 
 - __1. Oracle__
 - __2. Microsft__
