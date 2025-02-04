@@ -101,6 +101,16 @@
 - __`sqlmap -u '<url>' --cookie='Trackingid=<id_value>; session=<value>' --level2 --dbms=postgreSQL --dump --threads=5`__
 
 
+## Bypass XML encoding
+
+![image1](/Image/sqlinjection1.png)
+
+![image2](/Image/sqlinjection2.png)
+
+![image3](/Image/sqlinjection3.png)
+
+
+
 #  Types of database
 
 - __1. Oracle__
