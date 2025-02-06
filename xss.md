@@ -1,4 +1,4 @@
-__Check more VUE payloads in [portsiwgger](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#vuejs-reflected)__
+__Check more VUE payloads in [portswigger](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#vuejs-reflected)__
 ![image1](Image/xss.png)
 
 ## DOM XSS in AngularJS expression
