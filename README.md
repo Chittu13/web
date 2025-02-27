@@ -77,6 +77,8 @@
 ## davtest
 - __`davtest -url http://target1.ine.local/webdav`__
 - __`davtest -auth bob:password_123321 -url http://target1.ine.local/webdav`__
+- __`davtest -url http://target-ip/ -sendbd auto`__
+
 
 ## cadaver
 - __`cadaver http://test.com/webdav`__
